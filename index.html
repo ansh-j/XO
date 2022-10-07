@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play your favourite tracks</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/xo.png" />
+
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/bc7701f35c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul>
+        <li class="brand">
+          <img src="images/xo.png" alt="Spotify" />
+          <!-- <span>V/pan> -->
+        </li>
+        <li>Home</li>
+        <li>Library</li>
+        <li>Friends</li>
+        <li>About</li>
+        <li class="searchBar">
+          <!-- <i id="0" class="fa-solid fa-magnifying-glass searchIcon"></i> -->
+          <input class="search" type="text" />
+
+          <button class="search-btn" type="submit">search</button>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="tracks">
+        <h1 class="trackTittle">Your tracks</h1>
+
+        <div class="trackList">
+          <div class="track">
+            <img src="images/DISC.png" alt="disc-img" />
+            <p class="trackName">I wanna be yours</p>
+          
+            <i id="505" class="songPlay fa-solid fa-play"></i>
+          </div>
+          <div class="track">
+            <img src="images/DISC.png" alt="disc-img" />
+            <p class="trackName">I wanna be yours</p>
+            
+            <i id="Arabella" class="songPlay fa-solid fa-play"></i>
+          </div>
+          <div class="track">
+            <img src="images/DISC.png" alt="disc-img" />
+            <p class="trackName">I wanna be yours</p>
+            
+            <i id="Castle on the hill" class="songPlay fa-solid fa-play"></i>
+          </div>
+          <div class="track">
+            <img src="images/DISC.png" alt="disc-img" />
+            <p class="trackName">I wanna be yours</p>
+            
+            <i id="Do i wanna know" class="songPlay fa-solid fa-play"></i>
+          </div>
+          <div class="track">
+            <img src="images/DISC.png" alt="disc-img" />
+            <p class="trackName">I wanna be yours</p>
+            
+            <i id="I wanna be yours" class="songPlay fa-solid fa-play"></i>
+          </div>
+          <div class="track">
+            <img src="images/DISC.png" alt="disc-img" />
+            <p class="trackName">I wanna be yours</p>
+            
+            <i id="I was never there" class="songPlay fa-solid fa-play"></i>
+          </div>
+          <div class="track">
+            <img src="images/DISC.png" alt="disc-img" />
+            <p class="trackName">I wanna be yours</p>
+            
+            <i id="Supercuts" class="songPlay fa-solid fa-play"></i>
+          </div>
+          <div class="track">
+            <img src="images/DISC.png" alt="disc-img" />
+            <p class="trackName">I wanna be yours</p>
+            
+            <i id="Thinking out loud" class="songPlay fa-solid fa-play"></i>
+          </div>
+          <div class="track">
+            <img src="images/DISC.png" alt="disc-img" />
+            <p class="trackName">I wanna be yours</p>
+            
+            <i id="We don't talk anymore" class="songPlay fa-solid fa-play"></i>
+          </div>
+          <div class="track">
+            <img src="images/DISC.png" alt="disc-img" />
+            <p class="trackName">I wanna be yours</p>
+            
+            <i id="You are not alone" class="songPlay fa-solid fa-play"></i>
+          </div>
+         
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="songInfo">
+
+        <img id="gif" class="playingGif" src="playing.gif" alt="playing-gif">
+        <span id="currentlyPlaying">505</span>
+
+      </div>
+      <input type="range" name="name" id="myProgressBar" min="0" value="0" max="100" />
+      <div class="icons">
+        <i  id="prev" class="fa-2x fa-solid fa-backward-step"></i>
+        <i  id="masterPlay" class="fa-2x fa-solid fa-play"></i>
+        <i  id="next" class="fa-2x fa-solid fa-forward-step"></i>
+      </div>
+      
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

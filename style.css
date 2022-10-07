@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+
+
+body {
+    background-color: darkgray;
+    font-family: 'Bitter', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR */
+
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background-color: black;
+    /* display: flex; */
+    /* flex-direction: row; */
+    color: white;
+    /* align-items: center; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav ul {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+    justify-content: space-between;
+}
+
+.nav ul li {
+    padding: 0 12px;
+    /* margin: 0 2vw; */
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin-left: 1vw;
+
+}
+
+.brand img {
+    width: 40px;
+    padding-right: 5vw;
+
+}
+
+.searchBar {
+    /* position: relative; */
+    /* margin-left: auto; */
+    /* margin-right: 10%; */
+    margin-left: 5vw;
+
+}
+
+.search {
+    padding: 2px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 3.5vh;
+}
+
+.search-btn {
+    margin-left: 7px;
+    border-radius: 10px;
+    /* width: 50px; */
+    /* height: 25px; */
+    padding: 5px;
+}
+
+.search-btn:hover {
+    background-color: darkgray;
+    transition: 0.7s;
+}
+
+.search-btn:active {
+    background-color: black;
+}
+
+/* MAIN BODY */
+
+.container {
+    padding: 9vh 10vw 0;
+    /* height: auto; */
+
+}
+
+.tracks {
+    height: 64vh;
+    margin-top: 4.1vh;
+
+    color: white;
+    text-align: center;
+
+    padding: 4vh 10% 0;
+
+    background-image: url(images/spotlight.png);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+
+    border-radius: 4vh;
+
+}
+
+.trackTittle {
+
+    margin-top: 1.5vh;
+    /* margin-bottom: 0vh; */
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+    font-family: 'EB Garamond', serif;
+
+
+}
+
+.trackList {
+    height: 50vh;
+
+    overflow: hidden;
+    /* overflow-y: hidden; */
+
+}
+
+.trackList:hover {
+    overflow-y: scroll;
+
+}
+
+
+
+.track {
+    display: flex;
+    margin: 4vh auto;
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    width: 50vw;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow:scroll; */
+
+    /* overflow: hidden; */
+
+
+}
+
+.track:hover {
+    background-color: grey;
+    /* overflow-y:scroll; */
+    color: white;
+
+}
+
+.track img {
+
+    height: 3vh;
+
+    margin-left: 4vw;
+
+}
+
+.track i {
+    margin-right: 2vw;
+    cursor: pointer;
+
+}
+
+.track p {
+    margin-right: 2vw;
+}
+
+
+
+/* PLAYER */
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2vh 1%;
+    height: 12vh;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#myProgressBar {
+    accent-color: darkgray;
+    width: 75vw;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 2vh;
+}
+
+.icons i {
+    margin: 0 2vh;
+    cursor: pointer;
+}
+
+.songInfo {
+    position: absolute;
+    top: 8vh;
+    left: 9vw;
+}
+
+.playingGif {
+    width: 4vw;
+    /* height: 4vh; */
+    margin-right: 1vw;
+    opacity: 0;
+    transition: 0.4s ease-in;
+
+}
+
+@media (max-width:750px) {
+
+    .searchBar {
+        display: none;
+    }
+
+    .songInfo {
+        position: static;
+        padding-bottom: 1vh;
+
+    }
+    .playingGif
+    {
+        display: none;
+    }
+}
